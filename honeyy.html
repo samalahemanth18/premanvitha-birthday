@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday My Best Friend 🎉</title>  <!-- 🎵 Background Music -->  <audio id="bgMusic" autoplay loop>
+    <source src="perfect.mpeg" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 70px 20px 40px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-weight: 300;
+      margin-top: 0;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 25px;
+      padding: 35px;
+      margin: 30px auto;
+      max-width: 800px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    }
+    .message {
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 15px 32px;
+      font-size: 1.05rem;
+      border: none;
+      border-radius: 35px;
+      cursor: pointer;
+      background: #fff;
+      color: #ff4f81;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+    footer {
+      padding: 35px 10px;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      font-size: 22px;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.8;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 0; }
+      10% { opacity: 1; }
+      100% { transform: translateY(-120vh) scale(1.6); opacity: 0; }
+    }
+  </style></head>
+<body>  <header>
+    <h1>🎂 Happy Birthday, <span id="name">PREMANVITHA</span> 🎂</h1>
+    <h2>You make my world brighter every single day 💖</h2>
+  </header>  <div class="card">
+    <p class="message">
+      Today isn’t just another date on the calendar… it’s the day the universe decided to gift the world
+      someone as beautiful, kind, and special as <b>you</b>. ✨
+      <br><br>
+      Thank you for every late-night talk, every shared laugh, every silly fight, and every moment
+      where you stood by me like no one else ever could. 💕
+      <br><br>
+      I hope this year wraps you in happiness, fills your heart with peace, and turns your dreams
+      into unforgettable realities. You deserve nothing but the absolute best. 🌸
+    </p><!-- 📸 Photo Gallery -->
+<div class="gallery">
+  <img src="honeyyyyy.jpeg" alt="special moment of my princess">
+  <img src="elsa.jpeg" alt="a princess portrait">
+  <img src="premuuu.jpeg" alt="a princess being her wonderful self">
+  <img src="honey31.jpeg" alt="a beautiful princess smiling">
+  <img src="honey15.jpeg" alt="beautiful smile of a princess">
+</div>
+
+<button class="btn" onclick="showSurprise()">Tap for a Surprise 🎁</button>
+
+  </div>  <footer>
+    Made with endless love ❤️ just for you
+  </footer>  <script>
+    // 🎁 Surprise message
+    function showSurprise() {
+      alert("🎉 Surprise! 🎉\nYou are my favorite person, my safe place, and my forever best friend.\nHappy Birthday 💕");
+    }
+
+    // 💖 Floating hearts
+    const hearts = ['❤️','💖','💘','💕','💞','🥰'];
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerText = hearts[Math.floor(Math.random() * hearts.length)];
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (4 + Math.random() * 3) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 7000);
+    }, 450);
+  </script></body>
+</html>	
